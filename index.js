@@ -20,9 +20,7 @@ client.on('message', message => {
 client.on('message', message => {
 
 	if(message.body === '/menu') {
-
 		message.reply('/Consultas\n/Ofertas');
-
 	}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
 		client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
 	}else{
