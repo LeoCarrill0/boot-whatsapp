@@ -20,11 +20,13 @@ client.on('message', message => {
 client.on('message', message => {
 
 	if(message.body === '/menu') {
-		message.reply('pong');
+
+		message.reply('/Consultas\n/Ofertas');
+
 	}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
 		client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
 	}else{
-		client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver mas opciones');
+		client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver las opciones');
         //client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
 	}
 
