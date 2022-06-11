@@ -31,5 +31,6 @@ client.on('message', message => {
 			client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver las opciones');
 			//client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
 		}
+		console.log(message.from);
 	}
 );
