@@ -23,8 +23,7 @@ client.on('message', message => {
 		message.reply('pong');
 	}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
 		client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
-	}
-    else{
+	}else{
 		client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver mas opciones');
         //client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
 	}
