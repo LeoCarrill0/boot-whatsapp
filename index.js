@@ -21,9 +21,12 @@ client.on('message', message => {
 
 	if(message.body === '/menu') {
 		message.reply('pong');
-	}
-    if(message.body != ' ') {
+	}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
 		client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
+	}
+    else{
+		client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver mas opciones');
         //client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
 	}
+
 });
