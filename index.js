@@ -19,17 +19,17 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-	if(message.body === '/menu') {
-		message.reply('/Consultas\n/Ofertas');
-	}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
-		client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
-	}else if(message.body === '/Consultas'){
-		client.sendMessage(message.from, ' ');
-	}else if(message.body === '/Ofertas'){
-		client.sendMessage(message.from, ' ');
-	}else{
-		client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver las opciones');
-        //client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
+		if(message.body === '/menu') {
+			message.reply('/Consultas\n/Ofertas');
+		}else if(message.body === 'Hola' || message.body === 'hola' || message.body === 'Hola.'){
+			client.sendMessage(message.from, 'Hola 😃🙋, ¿Que tal, en que puedo ayudarte?😊');
+		}else if(message.body === '/Consultas'){
+			client.sendMessage(message.from, ' ');
+		}else if(message.body === '/Ofertas'){
+			client.sendMessage(message.from, ' ');
+		}else{
+			client.sendMessage(message.from, 'Para acceder al menu envie */menu* para ver las opciones');
+			//client.sendMessage(message.from, 'Ingrese */menu* para ver las opciones');
+		}
 	}
-
-});
+);
